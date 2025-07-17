@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemini Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="calculator-body">
+        <div class="system-bar">
+            <div class="system-button close"></div>
+            <div class="system-button minimize"></div>
+            <div class="system-button maximize"></div>
+        </div>
+        <div class="display-container">
+            <div class="history">
+                <span id="history-operand1">0</span>
+                <span id="history-operator"></span>
+            </div>
+            <div class="display" id="display">10</div>
+        </div>
+        <div class="keys">
+            <div class="key-row">
+                <button class="key number">7</button>
+                <button class="key number">8</button>
+                <button class="key number">9</button>
+                <button class="key operator" data-operator="divide">/</button>
+            </div>
+            <div class="key-row">
+                <button class="key number">4</button>
+                <button class="key number">5</button>
+                <button class="key number">6</button>
+                <button class="key operator" data-operator="multiply">X</button>
+            </div>
+            <div class="key-row">
+                <button class="key number">1</button>
+                <button class="key number">2</button>
+                <button class="key number">3</button>
+                <button class="key operator" data-operator="subtract">-</button>
+            </div>
+            <div class="key-row">
+                <button class="key function" data-function="clear">AC</button>
+                <button class="key number">0</button>
+                <button class="key function" data-function="equals">=</button>
+                <button class="key operator" data-operator="add">+</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
